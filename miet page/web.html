@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://image-static.collegedunia.com/public/college_data/images/logos/1705041201download14.png"
+        alt = "Miet logo"
+        width="70" 
+        />
+        <h1>MIET College</h1>
+        <p>Smart Campus Helpdesk Portal</p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Register Complaint</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <figure>
+                <img src="https://mietjmu.in/wp-content/uploads/2025/02/DJI_20241129113027_0387_D-Large.jpeg"
+                width="100%"
+                />
+                <figcaption>MIET College - Main Campus</figcaption>
+            </figure>
+            <h2>Welcome to the Smart Campus Portal</h2>
+            <p>Your one-stop portal for registering complaints, accessing resources, and staying informed about campus life. We are here to help you with every issue — big or small.</p>
+        </section>
+        <hr>
+        <section>
+            <h2>About the Helpdesk</h2>
+            "The MIET Smart Campus Helpdesk is a digital platform that allows students to report issues related to hostels, labs, classrooms, library, transport, and more. Our team ensures timely resolution and keeps you updated on the status of your requests."
+            </p>
+            <blockquote>"Our mission is to provide a seamless experience for every student, ensuring their concerns are heard and resolved promptly.
+            <h3>How It Works</h3>
+            <ol>
+                <li>Register your complaint through the portal.</li>
+                <li>Receive a ticket number for tracking.</li>
+                <li>Our team reviews and addresses the issue.</li>
+                <li>Get notified when the issue is resolved.</li>
+        </section>
+        <hr>
+        <section>
+            <h2>Register a Complaint</h2>
+            <p>Fields marked with * are required.</p>
+            <form>
+                     <fieldset>
+            <legend><h3>Student Details</h3></legend>
+
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@miet.edu"
+            />
+
+            <label for="roll">Roll Number *</label>
+            <input
+              type="text"
+              id="roll"
+              name="roll"
+              required
+              pattern="[A-Za-z0-9]+"
+              title="Alphanumeric only (e.g., MIET22101)"
+              placeholder="MIET22101"
+            />
+
+            <label for="phone">Phone *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{10}"
+              title="Enter 10-digit mobile number"
+              placeholder="9876543210"
+            />
+
+            <label for="year">Year / Branch *</label>
+            <select id="year" name="year" required>
+              <option value="">-- Select --</option>
+              <option value="cse-1">CSE 1st Year</option>
+              <option value="cse-2">CSE 2nd Year</option>
+              <option value="cse-3">CSE 3rd Year</option>
+              <option value="cse-4">CSE 4th Year</option>
+              <option value="ece-1">ECE 1st Year</option>
+              <option value="ece-2">ECE 2nd Year</option>
+              <option value="ece-3">ECE 3rd Year</option>
+              <option value="ece-4">ECE 4th Year</option>
+            </select>
+          </fieldset>
+           <fieldset>
+            <legend><h3>Complaint Details</h3></legend>
+
+            <label for="category">Category *</label>
+            <select id="category" name="category" required>
+              <option value="">-- Select Category --</option>
+              <option value="hostel">Hostel Issue</option>
+              <option value="lab">Lab / Equipment Issue</option>
+              <option value="classroom">Classroom Issue</option>
+              <option value="library">Library Issue</option>
+              <option value="transport">Transport Issue</option>
+              <option value="canteen">Canteen Issue</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="title">Complaint Title *</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              required
+              minlength="10"
+              placeholder="Brief title (min 10 characters)"
+            />
+
+            <label for="description">Description *</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              required
+              maxlength="500"
+              placeholder="Describe your issue in detail..."
+            ></textarea>
+
+            <p>Priority *</p>
+            <label
+              ><input type="radio" name="priority" value="low" required />
+              Low</label
+            >
+            <label
+              ><input type="radio" name="priority" value="medium" />
+              Medium</label
+            >
+            <label
+              ><input type="radio" name="priority" value="high" /> High</label
+            >
+            <label
+              ><input type="radio" name="priority" value="urgent" />
+              Urgent</label
+            >
+
+            <label for="location">Location</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              list="locations"
+              placeholder="Start typing for suggestions"
+            />
+            <datalist id="locations">
+              <option value="Main Block"></option>
+              <option value="Hostel A"></option>
+              <option value="Hostel B"></option>
+              <option value="Lab Complex"></option>
+              <option value="Library"></option>
+              <option value="Canteen"></option>
+            </datalist>
+          </fieldset>
+            </form>
+    </main>
+</body>
